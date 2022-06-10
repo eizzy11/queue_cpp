@@ -69,7 +69,7 @@ void enqueue_antrian (string dataMasuk) {
 void dequeue_antrian_tong () {
     if (antrian_kosong () == false) {
         for (int x = wahana.depan; x <= wahana.belakang; x++) {
-            wahana.tempat[x] = wahana.tempat[x + 10]; //pada wahana.tempat[x + 10], kenapa 10 karena proses dequeue pada wahana tong_setan 10 dequeue
+            wahana.tempat[x] = wahana.tempat[x + 10]; 
         }
         wahana.belakang--;
         cout << "Data sudah terhapus" << endl;
@@ -81,7 +81,7 @@ void dequeue_antrian_tong () {
 void dequeue_antrian_rumah () {
     if (antrian_kosong () == false) {
         for (int x = wahana.depan; x <= wahana.belakang; x++) {
-            wahana.tempat[x] = wahana.tempat[x + 2]; //pada wahana.tempat[x + 2], kenapa 2 karena proses dequeue pada wahana rumah_hantu 2 dequeue
+            wahana.tempat[x] = wahana.tempat[x + 2]; 
         }
         wahana.belakang--;
         cout << "Data sudah terhapus" << endl;
@@ -93,7 +93,7 @@ void dequeue_antrian_rumah () {
 void dequeue_antrian_bianglala () {
     if (antrian_kosong () == false) {
         for (int x = wahana.depan; x <= wahana.belakang; x++) {
-            wahana.tempat[x] = wahana.tempat[x + 15]; //pada wahana.tempat[x + 15], kenapa 15 karena proses dequeue pada wahana bianglala 15 dequeue
+            wahana.tempat[x] = wahana.tempat[x + 15]; 
         }
         wahana.belakang--;
         cout << "Data sudah terhapus" << endl;
@@ -105,7 +105,7 @@ void dequeue_antrian_bianglala () {
 void dequeue_antrian_ombak () {
     if (antrian_kosong () == false) {
         for (int x = wahana.depan; x <= wahana.belakang; x++) {
-            wahana.tempat[x] = wahana.tempat[x + 5]; //pada wahana.tempat[x + 5], kenapa 5 karena proses dequeue pada wahana ombak_banyu 5 dequeue
+            wahana.tempat[x] = wahana.tempat[x + 5]; 
         }
         wahana.belakang--;
         cout << "Data sudah terhapus" << endl;
